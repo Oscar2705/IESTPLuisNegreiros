@@ -1,0 +1,24 @@
+<div class="navegation">
+    <div class="menu container">
+        <img class="logo-white" src="assets/Logo.svg" alt="logo del instituto color blanco">
+        <img class="logo-black" src="assets//Logo-Black.svg" alt="logo del instituto color negro">
+
+        <input class="none" type="checkbox" name="" id="burguer">
+        <label for="burguer" class="burguer">
+            <img class="hamburguer" src="assets/navbar.svg" alt="icono de navegacion">
+        </label>
+       
+
+        <nav class="nav">
+            <a  [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="/" class="nav__link nav__link--active">Inicio</a>
+            <!-- <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="/" class="nav__link nav__link--active">Inicio</a></li> -->
+            <a routerLinkActive="active" routerLink="/nosotros"  class="nav__link">Nosotros</a>
+            <a routerLinkActive="active" routerLink="/carreras" class="nav__link">Carreras</a>
+            <a routerLinkActive="active" routerLink="/comunicados" class="nav__link">Comunicados</a>
+            <a routerLinkActive="active" routerLink="/admision" class="nav__link">Admisión</a>
+            <a routerLinkActive="active" routerLink="/tramites" class="nav__link">Trámites</a>
+            <a routerLinkActive="active" routerLink="/bienestar" class="nav__link">Bienestar</a>
+       </nav>
+    </div>
+    
+</div>

@@ -1,0 +1,126 @@
+.navegation{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--nav-color);
+    z-index: 999;
+  }
+  .menu{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+  }
+  .hamburguer{
+    cursor: pointer;
+  }
+  .logo-black{
+    display: none;
+  }
+  .nav{
+    position: absolute;
+    left: -250px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 100vh;
+    width: 240px;
+    border-top-right-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+    background-color: var(--white-color);
+    transition: left .4s ease-in-out;
+  }
+  #burguer:checked ~ .nav{
+    left: 0;
+    box-shadow: 2px 0 20px 0 rgba(0, 0, 0, .5);
+   }
+  
+ .nav__link{
+  position: relative;
+  display: inline-block;
+  padding: 1rem 0;
+  margin-bottom: .5rem;
+  color: var(--text-nav-color);
+  text-decoration: none;
+  /* border-bottom: 3px solid #fff; */
+  transition: border-bottom .1s ease;
+  overflow: hidden;
+ }
+ .active{
+  font-weight: bold;
+ }
+ .nav__link::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: .25rem;
+  background-color: var(--green-color);
+  transition: width .4s ease, left .4s ease;
+  
+ }
+ .nav__link:hover::after{
+  width: 100%;
+ }
+ .nav__link::after{
+  left: 0;
+ }
+ 
+ .nav__link:hover{
+  /* font-weight: 600; */
+  color: var(--black-color);
+  /* border-bottom: 3px solid var(--green-color); */
+  }
+ 
+ @media screen and (min-width: 64rem) {
+  .navegation{
+    position: static;
+    background-color: var(--white-color);
+    margin-top: 1rem;
+  }
+  .menu{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    height: 92px;
+  }
+  .burguer{
+    display: none;
+  }
+  .logo-white{
+    display: none;
+  }
+  .logo-black{
+    display: block;
+    height: 79px;
+    width: 76px;
+  }
+  .nav{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    height: inherit;
+    width: 100%;
+    box-shadow:0 0 0 0 #fff;
+  }
+  #burguer:checked ~ .nav{
+    box-shadow: 0 0 var(--white-color);
+   }
+  .nav__link{
+    padding: 1rem .5rem;
+    margin-bottom: 0;
+    margin: 0 8px;
+    text-decoration: none;
+    color: var(--text-nav-color);
+    border-bottom: 3px solid transparent;
+   }
+   
+ }
