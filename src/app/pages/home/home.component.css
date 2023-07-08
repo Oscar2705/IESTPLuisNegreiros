@@ -161,7 +161,7 @@
     display: flex;
     transition: transform .5s ease-in-out;
   }
-  .carousel .slides .slide-1{
+  .carousel .slides .slide{
     width: 100%;
   }
   .carousel .slides-nav{
@@ -208,12 +208,26 @@
   .slide__contain{
     padding: 0 1rem;
   }
-  .slide-1{
+  .slide{
     text-align: center;
-    background-image: url("../../../assets/computacion-mobile.png");
-    background-position: center right;
+    background-position: center left;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .slide-1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/computacion-mobile.png");
+  }
+  .slide-2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/Contabilidad-mobile.png");
+  }
+  .slide-3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/electronica-mobile.png");
+  }
+  .slide-4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/produccion-mobile.png");
+  }
+  .slide-5{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/automotriz-mobile.png");
   }
  
   .title__specialty{
@@ -226,6 +240,7 @@
   .slider__paragraph{
     color: var(--white-alpha-color);
     margin-bottom: 2rem;
+    text-align: justify;
   }
 
   .slider__btn{   
@@ -250,17 +265,30 @@
       height: 0.5rem;
       margin: 0 .75rem;
      }
-    .slide-1{
+     .slide{
       display: flex;
       justify-content: flex-start;
       align-items: center;
       text-align: left;
       border: 0 ;
-      background-image: url("../../../assets/computacion-tablet.png");
+     }
+    .slide-1{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/computacion-tablet.png");     
+    }
+    .slide-2{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/Contabilidad-tablet.png");     
+    }
+    .slide-3{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/electronica-tablet.png");     
+    }
+    .slide-4{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/produccion-tablet.png");     
+    }
+    .slide-5{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/automotriz-tablet.png");     
     }
     .slide__contain{
       width: 510px;
-      /* background-color: orange; */
       margin-left: 4rem;
     }
     .title__specialty{
@@ -286,6 +314,21 @@
     .slide__contain{
       width: 620px;
       margin-left: 7rem;
+    }
+    .slide-1{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/computacion-tablet.png");
+    }
+    .slide-2{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/Contabilidad-desktop.png");
+    }
+    .slide-3{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/electronica-desktop.png");
+    }
+    .slide-4{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/produccion-desktop.png");
+    }
+    .slide-5{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/automotriz-desktop.png");
     }
     .title__specialty{
       text-align: left;
