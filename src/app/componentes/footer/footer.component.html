@@ -15,7 +15,7 @@
 
             <div class="footer__information">
                 <i class="bi bi-envelope-fill"></i>
-                <p>informes@ iestpluisnegreiros. edu. pe</p>  
+                <p>informes@ iestpluisnegreiros.edu.pe</p>  
             </div>
 
         </div>
@@ -23,13 +23,14 @@
         <div class="footer__contain">
             <h3>Links</h3>
             <div class="footer__links">
-                <a href="" class="footer__link">Inicio</a>
-                <a href="" class="footer__link">Nosotros</a>
-                <a href="" class="footer__link">Carreras</a>
-                <a href="" class="footer__link">Comunicados</a>
-                <a href="" class="footer__link">Admisión</a>
-                <a href="" class="footer__link">Bienestar</a>
-                <a href="" class="footer__link">Contáctanos</a>
+                <a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="/" class="footer__link">Inicio</a>
+                <a routerLinkActive="active" routerLink="/nosotros" class="footer__link">Nosotros</a>
+                <a routerLinkActive="active" routerLink="/carreras" class="footer__link">Carreras</a>
+                <a routerLinkActive="active" routerLink="/comunicados" class="footer__link">Comunicados</a>
+                <a routerLinkActive="active" routerLink="/admision" class="footer__link">Admisión</a>
+                <a routerLinkActive="active" routerLink="/tramites" class="footer__link">Trámites</a>
+                <a routerLinkActive="active" routerLink="/bienestar" class="footer__link">Bienestar</a>
+
             </div>
         </div>
 

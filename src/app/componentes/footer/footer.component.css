@@ -1,5 +1,5 @@
 .footer{
-    padding: 2rem 2rem 5rem;
+    padding: 2rem 2rem;
     background: var(--footer-color);
   }
   .footer__group{
@@ -86,9 +86,13 @@
     text-align: center;
     color: var(--white-color);
   }
+  .active{
+    font-weight: bold;
+    color: var(--white-color);
+  }
   @media screen and (min-width: 48rem) {
     .footer{
-      height: 37rem;
+      height: 36rem;
       padding: 3rem 2rem 0;
     }
     .footer__group{

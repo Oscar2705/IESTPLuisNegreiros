@@ -708,6 +708,7 @@
   width: 500%;
   transition: transform .5s ease-in-out;
 }
+
 #comment-slide-1:checked ~ .comments__slides{
   transform: translateX(0%);
 }
@@ -734,6 +735,9 @@
 .comments__slide{
   width: 100%;
   padding: 2rem;
+}
+.comments__slide > p{
+  text-align: justify;
 }
 .comments__carousel input{
   display: none;
@@ -763,5 +767,8 @@
     flex-direction: column;
     justify-content: center;
     background-color: var(--section-color);
+  }
+  .comments__slide > p{
+    text-align: center;
   }
 }

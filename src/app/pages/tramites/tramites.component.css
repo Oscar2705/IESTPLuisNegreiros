@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-} 
+}
  .title > h2{
      max-width: 90%;
      font-size: var(--step-2);
@@ -19,7 +19,7 @@
      text-align: center;
      color: var(--white-color);
  }
- 
+
  @media screen and (min-width: 48rem){
     .title{
         height: 32rem;
@@ -37,7 +37,7 @@
         font-size: var(--step-4);
     }
  }
- 
+
 /*TRAMITE DOCUMENTARIO*/
 .formalities__container{
     display: flex;
@@ -59,14 +59,14 @@
 
     border-radius: 10px;
     box-shadow: 10px 10px 32px 0px #D1D9E6, -10px -10px 32px 0px rgba(255, 255, 255, 0.25);
-    
+
     transition: background-color .3s ease, color .3s ease;
   }
   .formalitie:hover{
     background-color: #212529;
     color: white;
   }
- 
+
  .formalities__container > a{
     display: block;
     text-decoration: none;
@@ -83,7 +83,7 @@
     text-align: center;
     width: 60%;
 }
- 
+
  @media screen and (min-width: 81.25rem) {
     .formalities__container{
         display: flex;
@@ -91,9 +91,9 @@
         justify-content: space-between;
         gap: 3rem 2rem;
     }
-    
+
  }
- 
+
 
 
  /* CONDICIONES Y PROCEDIMIENTOS----------------- */
@@ -104,6 +104,7 @@
  .condition__card{
     margin-bottom: 2rem;
     text-align: justify;
+    overflow-wrap: anywhere;
  }
 
  .condition__card > h3{
@@ -128,11 +129,11 @@
     gap: 2rem 0;
    }
   .condition__card{
-    
+
      width: 576px;
      border-radius: 20px;
      text-align: justify;
-    
+
    }
    .condition__card--interest{
     display: flex;
@@ -147,7 +148,7 @@
 }
 
  @media screen and (min-width: 81.25rem) {
- 
+
    .conditions__section{
     padding: 4rem 0;
     background-color: var(--section-color);
@@ -164,5 +165,5 @@
     border-radius: 10px;
     box-shadow: 10px 10px 32px 0px #D1D9E6, -10px -10px 32px 0px rgba(255, 255, 255, 0.25);
   }
-  
+
 }
