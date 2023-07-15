@@ -177,7 +177,7 @@
    .carousel label{
     display: inline-block;
     width: 2.2rem;
-    height: 0.3rem;
+    height: 0.4rem;
     margin: 0 .42rem;
     background-color: #6c757d;
     cursor: pointer;
@@ -351,6 +351,7 @@
     text-align: center;
   }
   .card__title{
+    margin-top: 1rem;
     color: var(--title-color);
   }
   .card__paragraph{
@@ -522,24 +523,35 @@
    }
    .environments__img{
     display: flex;
-    align-items: flex-end;
     justify-content: center;
+    align-items: flex-end;
+  
     width: 270px;
     height: 270px;
-  
+    
+    padding-bottom: .2rem;
     border-radius: 0.6rem;
-    background-image: url("../../../assets/Aulas-modernas.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 18px 18px 30px 0px #D1D9E6, -18px -18px 30px 0px rgba(255, 255, 255, 0.25);
    }
+   .environments__img--1{
+    background-image: url("../../../assets/aulas-modernas.png");
+   }
+   .environments__img--2{
+    background-image: url("../../../assets/amplios-ambientes.png");
+   }
+   .environments__img--3{
+    background-image: url("../../../assets/plan-estudios.png");
+   }
+   .environments__img--4{
+    background-image: url("../../../assets/campos-deportivos.png");
+   }
    .environments__contain__subtitle{
     text-align: center;
-    margin: 0 auto;
     width: 50%;
     color: var(--white-color);
-    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-weight: 700;
    }
    @media screen and (min-width:81.25rem){
@@ -657,6 +669,7 @@
   .staff__texts > h5{
     margin-top: .5rem;
     text-align: center;
+    color: #6c757d;
   }
   @media screen and (min-width:48rem){
     .staff__manager{
@@ -749,7 +762,7 @@
   background-color: #D9D9D9;
   border-radius: 50%;
   cursor: pointer;
-  margin: 0 .25rem;
+  margin: 0 .3rem;
 }
 .comment__avatar{
 	border-radius: 50%;
@@ -760,6 +773,12 @@
  }
  .comments__slide > h3{
   margin-top: .5rem;
+  font-weight: 600;
+ }
+ .comments__slide > h5{
+  margin-top: .5rem;
+  font-weight: 500;
+  color: #ef233c;
  }
 @media screen and (min-width: 48rem) {
   .comments{

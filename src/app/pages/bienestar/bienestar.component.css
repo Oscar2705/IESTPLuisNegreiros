@@ -76,9 +76,12 @@
     color: var(--green-color);
 }
 
-.information > p{
+.detailed-information > p{
    text-align: justify;
 }
+
+
+
 /*CONTACTO DE ESPECIALIDADES*/
 
 .specialties__contain{
@@ -108,7 +111,6 @@
         justify-content: center;
         align-items: center;
 
-        /* height: ; */
         height: 43rem;
         background-color: var(--section-color);
     }

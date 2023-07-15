@@ -7,6 +7,7 @@ import { ComunicadosComponent } from './comunicados/comunicados.component';
 import { AdmisionComponent } from './admision/admision.component';
 import { TramitesComponent } from './tramites/tramites.component';
 import { BienestarComponent } from './bienestar/bienestar.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -21,7 +22,8 @@ import { BienestarComponent } from './bienestar/bienestar.component';
     BienestarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     HomeComponent,

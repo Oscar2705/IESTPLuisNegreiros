@@ -122,8 +122,7 @@
   }
   .conditions__contain{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem 0;
@@ -154,6 +153,7 @@
     background-color: var(--section-color);
    }
    .conditions__contain{
+    flex-direction: row;
     justify-content: space-between;
     gap: 0;
    }
